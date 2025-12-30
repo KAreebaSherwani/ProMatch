@@ -89,7 +89,7 @@
 ### 🧩 Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/KAreebaSherwani/promatch-enterprise-ats.git
+git clone [https://github.com/KAreebaSherwani/promatch-enterprise-ats.git]
 cd promatch-enterprise-ats
 ```
 
