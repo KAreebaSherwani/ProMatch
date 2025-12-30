@@ -1,229 +1,185 @@
-🎯 PRO MATCH
-Enterprise Resume Matching System
+# 🎯 PRO MATCH
 
-
-
-✨ FEATURES
-
-🎯 Intelligent Matching Engine
-
-• Multi-Factor Scoring Algorithm
-Analyzes must-have skills (50%), semantic match (25%), nice-to-have skills (15%), and experience (10%)
-
-• Natural Language Processing
-Advanced NLP for contextual understanding of resumes and job descriptions
-
-• Synonym Recognition
-Automatically detects skill variations (e.g., JS = JavaScript)
-
-• OR Logic Support
-Handles alternative requirements such as Tableau OR Power BI
+### Enterprise Resume Matching System
 
 
 
 
-⚡ Rapid Processing
+## ✨ Features
 
-• Batch Upload
-Process up to 100 resumes simultaneously
+### 🎯 Intelligent Matching Engine
 
-• Real-Time Analysis
-2–5 seconds processing time per resume
+* **Multi-Factor Scoring Algorithm**
+  Analyzes must-have skills (50%), semantic match (25%), nice-to-have skills (15%), and experience (10%)
+* **Natural Language Processing (NLP)**
+  Contextual understanding of resumes and job descriptions
+* **Synonym Recognition**
+  Detects skill variations (e.g., JS = JavaScript)
+* **OR Logic Support**
+  Handles alternative requirements (e.g., Tableau OR Power BI)
 
-• Progress Tracking
-Live progress indicators with detailed status updates
+---
 
-• Multi-Format Support
-Supports PDF, DOCX, and TXT files
+### ⚡ Rapid Processing
 
+* **Batch Upload** – Process up to 100 resumes simultaneously
+* **Real-Time Analysis** – 2–5 seconds per resume
+* **Progress Tracking** – Live status updates
+* **Multi-Format Support** – PDF, DOCX, and TXT
 
+---
 
+### 📊 Comprehensive Analytics
 
-📊 Comprehensive Analytics
+* **Executive Dashboard** – Key hiring metrics at a glance
+* **Visual Charts** – Interactive score distributions and breakdowns
+* **Detailed Candidate Profiles** – Skill gap identification
+* **Ranking System** – Automatic ranking with medal badges
 
-• Executive Dashboard
-Key hiring metrics at a glance
+---
 
-• Visual Charts
-Interactive score distributions and category breakdowns
+### 🔍 Advanced Extraction
 
-• Detailed Candidate Profiles
-Complete analysis with skill gap identification
+* **Contact Information** – Email, phone, LinkedIn
+* **Professional Details** – Total and skill-specific experience
+* **Education** – Degree detection (Associate to PhD)
+* **Certifications** – Professional certifications and licenses
+* **Resume Quality Scoring** – Completeness score (0–100%)
 
-• Ranking System
-Automatic candidate ranking with medal badges for top performers
+---
 
+### 📥 Export Options
 
+* **CSV Reports** – Structured spreadsheet data
+* **JSON Data** – Complete nested analysis
+* **Summary Reports** – Professional text reports with recommendations
 
+---
 
-🔍 Advanced Extraction
+### 🔒 Security and Privacy
 
-• Contact Information
-Email addresses, phone numbers, and LinkedIn profiles
+* **Local Processing** – Data processed on your infrastructure
+* **No External APIs** – Zero third-party data sharing
+* **In-Memory Processing** – No permanent data storage
+* **Session Isolation** – Independent analysis sessions
 
-• Professional Details
-Total experience, skill-specific experience, and job titles
+---
 
-• Education
-Automatic degree detection from Associate to PhD
+## 🎬 Demo – Dashboard Overview
 
-• Certifications
-Professional certifications and licenses
+### 📊 Executive Summary
 
-• Resume Quality Scoring
-Completeness score from 0 to 100 percent
+* **Total Candidates:** 45
+* **Average Score:** 73.2%
+* **Qualified Candidates (≥60%):** 32
+* **Average Experience:** 5.3 years
 
+---
 
+## 🚀 Installation Guide
 
+### 📌 Prerequisites
 
-📥 Export Options
+* Python 3.8 or higher
+* pip (Python package manager)
+* Virtual environment (recommended)
 
-• CSV Reports
-Structured data for spreadsheet analysis
+---
 
-• JSON Data
-Complete nested analysis output
+### 🧩 Step 1: Clone the Repository
 
-• Summary Reports
-Professionally formatted text reports with recommendations
-
-
-
-
-🔒 Security and Privacy
-
-• Local Processing
-All data processed on local infrastructure
-
-• No External APIs
-Zero data transmission to third parties
-
-• In-Memory Processing
-No permanent storage of sensitive information
-
-• Session Isolation
-Each analysis runs independently
-
-
-
-🎬 Demo – Dashboard Overview
-
-📊 Executive Summary
-
-Total Candidates: 45
-Average Score: 73.2%
-Qualified Candidates (≥60%): 32
-Average Experience: 5.3 years
-
-
-
-🚀 Installation Guide
-
-📌 Prerequisites
-
-• Python 3.8 or higher
-• pip (Python package manager)
-• Virtual environment (recommended)
-
-
-
-🧩 Step 1: Clone the Repository
-
-git clone [https://github.com/KAreebaSherwani/promatch-enterprise-ats.git]
+```bash
+git clone https://github.com/KAreebaSherwani/promatch-enterprise-ats.git
 cd promatch-enterprise-ats
+```
 
+---
 
+### 🛠️ Step 2: Create a Virtual Environment
 
-🛠️ Step 2: Create a Virtual Environment
+**Windows**
 
-Windows
+```bash
 python -m venv venv
 venv\Scripts\activate
+```
 
-macOS / Linux
+**macOS / Linux**
+
+```bash
 python3 -m venv venv
 source venv/bin/activate
+```
 
+---
 
+### 📦 Step 3: Install Dependencies
 
-📦 Step 3: Install Dependencies
-
+```bash
 pip install -r requirements.txt
+```
 
+---
 
+### ✅ Step 4: Verify Installation
 
-✅ Step 4: Verify Installation
-
+```bash
 streamlit --version
 python --version
+```
 
+---
 
+## ⚡ Quick Start
 
-⚡ Quick Start
+### ▶️ Run the Application
 
-▶️ Run the Application
-
+```bash
 streamlit run app.py
+```
 
-The application will open in your browser at:
-[http://localhost:8501](http://localhost:8501)
+The application will open at:
+**[http://localhost:8501](http://localhost:8501)**
 
+---
 
-
-
-🔄 Basic Workflow
+## 🔄 Basic Workflow
 
 1. Enter the job description in the sidebar
-2. Upload resumes in PDF, DOCX, or TXT format
-3. Click Analyze to process candidates
+2. Upload resumes (PDF, DOCX, or TXT)
+3. Click **Analyze**
 4. Review results in the dashboard
-5. Export reports in the desired format
+5. Export reports as needed
 
+---
 
+## 🏗️ Architecture Overview
 
+### 📂 Project Structure
 
-🏗️ Architecture Overview
-
-📂 Project Structure
-
+```text
 promatch-enterprise-ats/
-│
-├── app.py                Main Streamlit application
-├── matcher.py            Resume matching logic
-├── utils.py              Utility functions
-├── requirements.txt      Python dependencies
-├── README.md             Documentation
-├── LICENSE               License file
-└── config                Skills, synonyms, and categories
+├── app.py              # Main Streamlit application
+├── matcher.py          # Resume matching logic
+├── utils.py            # Utility functions
+├── requirements.txt    # Python dependencies
+├── README.md           # Documentation
+├── LICENSE             # License file
+└── config/             # Skills, synonyms, categories
+```
+
+---
+
+## 🧠 Technology Stack
+
+* **Frontend:** Streamlit
+* **Backend:** Python 3.8+
+* **NLP:** Custom algorithms
+* **Charts:** Plotly
+* **PDF Processing:** PDFMiner
+* **DOCX Processing:** python-docx
 
 
-
-
-🧠 Technology Stack
-
-Frontend: Streamlit
-Backend: Python 3.8+
-NLP: Custom algorithms
-Charts: Plotly
-PDF Processing: PDFMiner
-DOCX Processing: python-docx
-
-
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
  
  
  
